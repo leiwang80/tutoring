@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#banner {
+  background: #FFF;
+  border-bottom: 2px solid;
+  width: 960px;
+  height: 120px;
+
+  img {
+	width: 100%;
+  	height: 100%;
+    vertical-align: bottom;
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  width:960px;
+  height: 600px;
+  background: #FFF;
+  margin: 0;
+
+  #main {
+    padding: 10px;
+	width: 680px;
+    height: 100%;
+	float: left;
+  }
+
+//#START:side
+  #side {
+	float: left;
+	width: 240px;
+    height: 600px;
+	background-color: #93A5C4;
+  	padding: 10px;
+
+/* START_HIGHLIGHT */
+    form, div {
+      display: inline;
+    }  
+
+    input {
+      font-size: small;
+    }
+
+
+
+/* END_HIGHLIGHT */
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        a {
+          color: #000;
+          font-size: 16px; 
+        }
+      }
+    }
+  }
+//#END:side
+}
+
+#foot {
+	background-color: #93A5C4; /*#8090AB; */
+	clear: both; 
+	text-align: center;
+	width: 960px;
+    height: 60px;
+	margin: 0;
+}
+
+
+//#START:form
+.tutor_form {
+  fieldset {
+    background: #efe;
+
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+
+    br {
+      display: none
+    }
+  }
+}
+//#END:form
+
